@@ -15,15 +15,15 @@
 2. Who are we building it for ?
         Xây dựng hệ thống để cho người dùng cá nhân , bản thân , bạn bè,...
 3. What features do we need to have?
-        - User
-                - Create account
-                - Login
-        - Wallets
-                - Create / Edit / Destroy.
-        - Deals
-                - Create / Edit / Destroy.
-        - Groups
-                - Create / Edit / Destroy.
+- User
+    - Create account
+    - Login
+- Wallets
+    - Create / Edit / Destroy.
+- Deals
+    - Create / Edit / Destroy.
+- Groups
+    - Create / Edit / Destroy.
 
 
 
