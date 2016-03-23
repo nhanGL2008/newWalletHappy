@@ -66,8 +66,10 @@
 ## Think through the pages we need in our app
 
  - Home
+ - Home#login
  - Home#createAccount
- - Home#createWallet
+ - Wallet#index
+ - Wallet#create
  - Deal#index
  - Deal#create
  - Group#index
