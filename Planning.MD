@@ -46,22 +46,26 @@
 - Mỗi **giao dịch** có thông tin *ngày giao dịch* , *nhóm giao dịch*, *số tiền* thực hiện giao dịch, *Ghi chú*.
 - **Nhóm giao dịch** : bao gồm *nhóm thu* và *nhóm chi*. Mỗi loại nhóm thu chi có nhiều loại nhóm nhỏ .Nhóm thu/chi có *tên* và *icon* tương ứng.
 
-**User**
-    name:string
-    password:string
-**Wallet**
-    name:string
-    balance:float
-**Deal**
-    day:datetime
-    group:string
-     money:float
-       note:text
-**Group**
-    name:string
-    buy:boolean
-    sell:boolean
-    gicon:string
+    **User**
+        name:string
+        password:string
+    **Wallet**
+        name:string
+        balance:float
+    **wallet_type**
+        wallet_id:integer
+        name:string
+    **Deal**
+        day:datetime
+        group:string
+        money:float
+        note:text
+    **Group**
+        name:string
+        gicon:string (link icon)
+    **GroupType**
+        group_id:integer
+        name:string
 
 ## Think through the pages we need in our app
 
