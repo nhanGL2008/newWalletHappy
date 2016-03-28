@@ -40,32 +40,37 @@
 
 ## Modeling our Data
 
-- Ví tiền có 2 loại **ví tiền mặt** và ví **tài khoản ngân hàng**. (nên chỉ để tên cho dễ)
-- Một Ví tiền có tên loại ví và số dư ( *balance* ), 1 list các giao dịch chi tiêu.
+- Ví tiền có 2 loại **ví tiền mặt** và ví **tài khoản ngân hàng**. (nên chỉ để tên cho dễ). Quản lý bằng tên.
+- Một Ví tiền có tên ví (*name*) và số dư ( *balance* ), 1 list các giao dịch chi tiêu.
 - **List giao dịch**: Mỗi tháng có 1 danh sách khác nhau , gồm nhiều giao dịch được sắp xếp theo thời gian thêm vào , sớm hơn thì ở trên.
 - Mỗi **giao dịch** có thông tin *ngày giao dịch* , *nhóm giao dịch*, *số tiền* thực hiện giao dịch, *Ghi chú*.
 - **Nhóm giao dịch** : bao gồm *nhóm thu* và *nhóm chi*. Mỗi loại nhóm thu chi có nhiều loại nhóm nhỏ .Nhóm thu/chi có *tên* và *icon* tương ứng.
 
 - **User**:
-    -name:string
-    -password:string
+    - name:string
+    - password:string
+    - has_many :wallets
+
 - **Wallet**:
-    -name:string
-    -balance:float
-- **wallet_type**:
-    -wallet_id:integer
-    -name:string
+    - name:string
+    - balance:float
+    - has_many :deals
+    - belongs_to :user
+
 - **Deal**:
-    -day:datetime
-    -group:string
-    -money:float
-    -note:text
+    - day:datetime
+    - group:string
+    - money:float
+    - note:text
+    - belongs_to :wallets
 - **Group**:
-    -name:string
-    -icon:string (link icon)
+    - name:string
+    - icon:string (link icon)
+    - has_many :grouptypes
 - **GroupType**:
-    -group_id:integer
-    -name:string
+    - group_id:integer
+    - name:string
+    - belongs_to :group
 
 ## Think through the pages we need in our app
 
@@ -73,9 +78,11 @@
  - Home#login
  - Home#createAccount
  - Wallet#index
- - Wallet#create
+ - Wallet#show
  - Deal#index
  - Deal#create
+ - Deal#show
  - Group#index
  - Group#create
+ - Group#show
  - Contact
