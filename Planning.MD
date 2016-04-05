@@ -15,14 +15,14 @@
 2. Who are we building it for ?
         Xây dựng hệ thống để cho người dùng cá nhân , bản thân , bạn bè,...
 3. What features do we need to have?
-    - User
+    - Users
         - Create account
         - Login
     - Wallets
         - Create / Edit / Destroy.
-    - Deals
+    - Transactions
         - Create / Edit / Destroy.
-    - Groups
+    - Categorys
         - Create / Edit / Destroy.
 
 
@@ -30,7 +30,8 @@
 
 ## User stories
 
-- Người dùng có thể login/create account.
+- To save my balance in my wallet
+- As a user, I want to add new transaction, to save my transaction.
 - Người dùng có thể thêm ví tiền, và số dư ban đầu.
 - Người dùng có thể xóa ví.
 - Người dùng có thể chuyển list giao dịch của các tháng.
@@ -54,35 +55,33 @@
 - **Wallet**:
     - name:string
     - balance:float
-    - has_many :deals
+    - has_many :transactions
     - belongs_to :user
 
-- **Deal**:
+- **Transaction**:
     - day:datetime
-    - group:string
     - money:float
     - note:text
     - belongs_to :wallets
-- **Group**:
+- **Category**:
     - name:string
     - icon:string (link icon)
-    - has_many :grouptypes
-- **GroupType**:
-    - group_id:integer
-    - name:string
-    - belongs_to :group
+    - has_many :ctypes
+- **CType**:
+    - category_id:integer
+    - name:string   (Expense- Income)
+    - belongs_to :category
 
 ## Think through the pages we need in our app
 
  - Home
  - Home#login
- - Home#createAccount
+ - Home#register
  - Wallet#index
- - Wallet#show
- - Deal#index
- - Deal#create
- - Deal#show
- - Group#index
- - Group#create
- - Group#show
+ - Wallet#_form
+ - Transaction#index
+ - Transaction#_form
+ - Transaction#show
+ - Category#index
+ - Category#_form
  - Contact
