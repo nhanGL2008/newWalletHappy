@@ -32,12 +32,7 @@
 
 - To save my balance in my wallet
 - As a user, I want to add new transaction, to save my transaction.
-- Người dùng có thể thêm ví tiền, và số dư ban đầu.
-- Người dùng có thể xóa ví.
-- Người dùng có thể chuyển list giao dịch của các tháng.
-- Người dùng có thể thêm giao dịch, xóa giao dịch , sửa giao dịch.
-- Người dùng có thể thêm nhóm , xóa nhóm sửa nhóm.
-
+### more ###
 
 ## Modeling our Data
 
