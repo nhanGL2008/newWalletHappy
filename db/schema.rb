@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160328202028) do
+ActiveRecord::Schema.define(version: 20160411182810) do
 
-  create_table "deals", force: :cascade do |t|
+  create_table "transactions", force: :cascade do |t|
     t.date     "day"
     t.float    "money"
     t.text     "note"

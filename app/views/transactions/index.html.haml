@@ -1,0 +1,5 @@
+- @transactions.each do |transaction|
+	%h4= transaction.day
+	%h4= transaction.money
+	%h2= link_to transaction.note, transaction
+= link_to "New Transaction" , new_transaction_path
