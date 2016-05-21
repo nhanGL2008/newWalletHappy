@@ -1,5 +1,24 @@
-- @transactions.each do |transaction|
-	%h4= transaction.day
-	%h4= transaction.money
-	%h2= link_to transaction.note, transaction
-= link_to "New Transaction" , new_transaction_path
+-# This is list of transaction
+
+%h1 Listing Transactions
+%table{class: %w(table table-striped sortable)}
+  %thead
+    %tr
+      %td{:style => "text-align: center;"} Name
+      %td{:style => "text-align: center;"} Balance
+      %td{:style => "text-align: center;", :conspan => "3"} Category
+    %tr
+  %thead
+
+  %tbody
+    = create_in(5).each do |transaction|
+      %tr
+        %td= transaction.day
+        %td= transaction.money
+        %td= link_to transaction.note, transaction
+      %tr
+    %end
+  %tbody
+%table
+
+= link_to 'New Transaction', new_transaction_path

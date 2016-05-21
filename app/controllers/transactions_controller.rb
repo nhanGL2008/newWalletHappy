@@ -2,10 +2,17 @@ class TransactionsController < ApplicationController
 	before_action :find_transaction, only: [:show, :edit, :update, :destroy]
 	
 	def index
-		@transactions = Transaction.all.order("created_at DESC")
+		@transactions = Transaction.all
 	end
 	def show
 	end
+
+	def self.by_year(year)
+		where('extract(year from day) = ?', year)
+	end
+
+	helper_method('create_in')
+
 	def new
 		@transaction = Transaction.new
 	end
@@ -27,6 +34,7 @@ class TransactionsController < ApplicationController
 			render "Edit"
 		end
 	end
+
 	def destroy
 		@transaction.destroy
 		redirect_to root_path
