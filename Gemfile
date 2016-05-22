@@ -10,6 +10,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'jquery-turbolinks', '~> 2.1'
+# User
+gem 'devise', '~> 3.5', '>= 3.5.6'
 
 group :development do
   # Use sqlite3 as the database for Active Record

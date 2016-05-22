@@ -13,13 +13,13 @@
 
   <div class="field" style="padding-top: 8px">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name , :placeholder => "Coins"%>
   </div>
   <div class="field" style="padding-top: 8px">
-    <%= f.label :balance %><br>
-    <%= f.text_field :balance %>
+    <%= f.label :balance%><br>
+    <%= f.text_field :balance , :placeholder => "1000 000$ " %>
   </div>
-  <div class="actions btn btn-sm" style="padding: 8px 0px 8px 0px" >
+  <div class="actions btn btn-lg" style="padding: 8px 0px 8px 0px" >
     <%= f.submit %>
   </div>
 <% end %>

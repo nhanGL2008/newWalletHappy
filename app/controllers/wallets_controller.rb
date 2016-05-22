@@ -1,5 +1,6 @@
 class WalletsController < ApplicationController
   before_action :set_wallet, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, show]
 
   # GET /wallets
   # GET /wallets.json
@@ -14,7 +15,7 @@ class WalletsController < ApplicationController
 
   # GET /wallets/new
   def new
-    @wallet = Wallet.new
+    @wallet = current_user.wallets.build
   end
 
   # GET /wallets/1/edit
