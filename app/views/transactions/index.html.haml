@@ -6,16 +6,18 @@
     %tr
       %td{:style => "text-align: center;"} Name
       %td{:style => "text-align: center;"} Balance
-      %td{:style => "text-align: center;", :conspan => "3"} Category
+      %td{:style => "text-align: center;", :conspan => "2"} Category
+      %td{:style => "text-align: center;"} Wallet
     %tr
   %thead
 
   %tbody
-    = create_in(5).each do |transaction|
+    -@transactions.each do |transaction|
       %tr
         %td= transaction.day
         %td= transaction.money
         %td= link_to transaction.note, transaction
+
       %tr
     %end
   %tbody

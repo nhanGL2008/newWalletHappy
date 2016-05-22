@@ -3,6 +3,7 @@ class TransactionsController < ApplicationController
 	
 	def index
 		@transactions = Transaction.all
+		@walletname = Wallet.where(:name => params[:name])
 	end
 	def show
 	end
@@ -11,13 +12,16 @@ class TransactionsController < ApplicationController
 		where('extract(year from day) = ?', year)
 	end
 
-	helper_method('create_in')
+	def group_transactions
+		Transaction.group_by_day(:create_at)
+	end
 
 	def new
 		@transaction = Transaction.new
 	end
 	def create
 		@transaction = Transaction.new(transactions_params)
+
 		if @transaction.save
 			redirect_to @transaction
 		else

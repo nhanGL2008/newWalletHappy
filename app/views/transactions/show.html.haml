@@ -4,4 +4,4 @@
 
 = link_to "Home", root_path
 = link_to "Edit", edit_transaction_path(@transaction)
-= link_to 'Delete', transaction_path(action: :delete,id: @transaction.id),method: :delete, data: {confirm: "Are you sure?"}
+= link_to "Delete", transaction_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"
