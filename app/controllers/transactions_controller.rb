@@ -3,13 +3,8 @@ class TransactionsController < ApplicationController
 	
 	def index
 		@transactions = Transaction.all
-		@walletname = Wallet.where(:name => params[:name])
 	end
 	def show
-	end
-
-	def self.by_year(year)
-		where('extract(year from day) = ?', year)
 	end
 
 	def group_transactions
@@ -19,6 +14,7 @@ class TransactionsController < ApplicationController
 	def new
 		@transaction = Transaction.new
 	end
+
 	def create
 		@transaction = Transaction.new(transactions_params)
 
@@ -47,7 +43,7 @@ class TransactionsController < ApplicationController
 	private
 
 	def transactions_params
-		params.require(:transaction).permit(:day, :money, :note, :wallet_id)
+		params.require(:transaction).permit(:day, :money, :note, :wallet_id, :category_id)
 	end
 	def find_transaction
 		@transaction = Transaction.find(params[:id])

@@ -15,6 +15,8 @@
         %td= transaction.day
         %td= transaction.money
         %td= link_to transaction.note, transaction
+
+        %td= Wallet.find_by_user_id(transaction.wallet_id)
     %end
 
 = link_to 'New Transaction', new_transaction_path
