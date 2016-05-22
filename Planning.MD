@@ -26,14 +26,6 @@
         - Create / Edit / Destroy.
 
 
-
-
-## User stories
-
-- To save my balance in my wallet
-- As a user, I want to add new transaction, to save my transaction.
-### more ###
-
 ## Modeling our Data
 
 - Ví tiền có 2 loại **ví tiền mặt** và ví **tài khoản ngân hàng**. (nên chỉ để tên cho dễ). Quản lý bằng tên.
@@ -61,11 +53,8 @@
 - **Category**:
     - name:string
     - icon:string (link icon)
+    - ctype:boolean
     - has_many :ctypes
-- **CType**:
-    - category_id:integer
-    - name:string   (Expense- Income)
-    - belongs_to :category
 
 ## Think through the pages we need in our app
 
@@ -74,9 +63,10 @@
  - Home#register
  - Wallet#index
  - Wallet#_form
+ - Wallet#show
  - Transaction#index
  - Transaction#_form
  - Transaction#show
  - Category#index
  - Category#_form
- - Contact
+ - About
