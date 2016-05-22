@@ -8,8 +8,6 @@
       %td{:style => "text-align: center;"} Balance
       %td{:style => "text-align: center;", :conspan => "2"} Category
       %td{:style => "text-align: center;"} Wallet
-    %tr
-  %thead
 
   %tbody
     -@transactions.each do |transaction|
@@ -17,10 +15,6 @@
         %td= transaction.day
         %td= transaction.money
         %td= link_to transaction.note, transaction
-
-      %tr
     %end
-  %tbody
-%table
 
 = link_to 'New Transaction', new_transaction_path

@@ -10,6 +10,7 @@
   <%= javascript_include_tag 'default', 'data-turbolinks-track', 'sortable' => true %>
   <%= csrf_meta_tags %>
 
+  <!--bootstraps font-awnsome hover-min-->
   <link crossorigin="anonymous" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" rel="stylesheet">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" media="all" onload="if(media!='all')media='all'" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css" media="all" onload="if(media!='all')media='all'" rel="stylesheet">
@@ -739,7 +740,7 @@
 
   @media only screen and (min-width: 768px) {
     .navbar-custom {
-      background-color:  #000;
+      background-color: #000;
       border-bottom: 1px solid
     }
 
@@ -811,150 +812,6 @@
     }
   }
 
-  .intro-header {
-    background-color: gray;
-    background: no-repeat center center;
-    background-attachment: scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    margin-bottom: 50px
-  }
-
-  .intro-header .site-heading, .intro-header .post-heading, .intro-header .page-heading {
-    padding: 100px 0 50px;
-    color: #fff
-  }
-
-  @media only screen and (min-width: 768px) {
-    .intro-header .site-heading, .intro-header .post-heading, .intro-header .page-heading {
-      padding: 150px 0
-    }
-  }
-
-  .intro-header .site-heading, .intro-header .page-heading {
-    text-align: center
-  }
-
-  .intro-header .site-heading h1, .intro-header .page-heading h1 {
-    margin-top: 0;
-    font-size: 50px
-  }
-
-  .intro-header .site-heading .subheading, .intro-header .page-heading .subheading {
-    font-size: 24px;
-    line-height: 1.1;
-    display: block;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    margin: 10px 0 0
-  }
-
-  @media only screen and (min-width: 768px) {
-    .intro-header .site-heading h1, .intro-header .page-heading h1 {
-      font-size: 80px
-    }
-  }
-
-  .intro-header .post-heading h1 {
-    font-size: 35px
-  }
-
-  .intro-header .post-heading .subheading, .intro-header .post-heading .meta {
-    line-height: 1.1;
-    display: block
-  }
-
-  .intro-header .post-heading .subheading {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 24px;
-    margin: 10px 0 30px;
-    font-weight: 600
-  }
-
-  .intro-header .post-heading .meta {
-    font-family: Lora, 'Times New Roman', serif;
-    font-style: italic;
-    font-weight: 300;
-    font-size: 20px
-  }
-
-  .intro-header .post-heading .meta a {
-    color: #fff
-  }
-
-  @media only screen and (min-width: 768px) {
-    .intro-header .post-heading h1 {
-      font-size: 55px
-    }
-
-    .intro-header .post-heading .subheading {
-      font-size: 30px
-    }
-  }
-
-  .post-preview > a {
-    color: #404040
-  }
-
-  .post-preview > a:hover, .post-preview > a:focus {
-    text-decoration: none;
-    color: #0085a1
-  }
-
-  .post-preview > a > .post-title {
-    font-size: 30px;
-    margin-top: 30px;
-    margin-bottom: 10px
-  }
-
-  .post-preview > a > .post-subtitle {
-    margin: 0;
-    font-weight: 300;
-    margin-bottom: 10px
-  }
-
-  .post-preview > .post-meta {
-    color: gray;
-    font-size: 18px;
-    font-style: italic;
-    margin-top: 0
-  }
-
-  .post-preview > .post-meta > a {
-    text-decoration: none;
-    color: #404040
-  }
-
-  .post-preview > .post-meta > a:hover, .post-preview > .post-meta > a:focus {
-    color: #0085a1;
-    text-decoration: underline
-  }
-
-  @media only screen and (min-width: 768px) {
-    .post-preview > a > .post-title {
-      font-size: 36px
-    }
-  }
-
-  .section-heading {
-    font-size: 36px;
-    margin-top: 60px;
-    font-weight: 700
-  }
-
-  .caption {
-    text-align: center;
-    font-size: 14px;
-    padding: 10px;
-    font-style: italic;
-    margin: 0;
-    display: block;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px
-  }
-
   footer {
     padding: 50px 0 65px
   }
@@ -968,14 +825,6 @@
     font-size: 14px;
     text-align: center;
     margin-bottom: 0
-  }
-
-  .floating-label-form-group {
-    font-size: 14px;
-    position: relative;
-    margin-bottom: 0;
-    padding-bottom: .5em;
-    border-bottom: 1px solid #eee
   }
 
   .floating-label-form-group input, .floating-label-form-group textarea {
@@ -1008,11 +857,6 @@
     transition: top .3s ease, opacity .3s ease
   }
 
-  .floating-label-form-group::not(:first-child) {
-    padding-left: 14px;
-    border-left: 1px solid #eee
-  }
-
   .floating-label-form-group-with-value label {
     top: 0;
     opacity: 1
@@ -1020,10 +864,6 @@
 
   .floating-label-form-group-with-focus label {
     color: #0085a1
-  }
-
-  form .row:first-child .floating-label-form-group {
-    border-top: 1px solid #eee
   }
 
   .btn {
@@ -1154,45 +994,14 @@
     background: linear-gradient(#FFF, #F9F9F9)
   }
 
-  /*#ECE9E6*/
-  .intro-header-placeholder {
-    background: #517fa4;
-    background: -webkit-linear-gradient(to left, #517fa4, #243949);
-    background: linear-gradient(to left, #517fa4, #243949)
+  .radio-yes-no {
+    padding: 8px 32px 8px 32px;
   }
-
-  .breadcrumbs {
-    display: none
-  }
-
-  #searchMenu {
-    outline: none !important
-  }
-
-  /* Bootstrap Modal Center Screen | http://codepen.io/dimbslmh/full/mKfCc */
-  .modal-dialog, .modal:before {
-    display: inline-block;
-    vertical-align: middle
-  }
-
-  .modal {
-    text-align: center;
-    padding: 0 !important
-  }
-
-  .modal:before {
-    content: '';
-    height: 100%;
-    margin-right: -4px
-  }
-
-  .modal-dialog {
-    text-align: left
-  }
-
 
 </style>
 <body>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
   <div class="container-fluid">
