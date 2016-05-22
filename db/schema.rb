@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160411182810) do
+ActiveRecord::Schema.define(version: 20160521171321) do
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "icon"
+    t.string   "name"
+    t.boolean  "ctype"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "transactions", force: :cascade do |t|
     t.date     "day"

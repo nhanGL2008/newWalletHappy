@@ -1,6 +1,6 @@
-class CreateDeals < ActiveRecord::Migration
+class CreateTransactions < ActiveRecord::Migration
   def change
-    create_table :deals do |t|
+    create_table :transactions do |t|
       t.date :day
       t.float :money
       t.text :note

@@ -1,14 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @wallet.name %>
-</p>
+<table class="table table-striped sortable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Balance</th>
+    </tr>
+  </thead>
 
-<p>
-  <strong>Balance:</strong>
-  <%= @wallet.balance %>
-</p>
+  <tbody>
+    <tr>
+      <td><%= @wallet.name	  %></td>
+      <td><%= @wallet.balance %></td>
+    </tr>
+  </tbody>
+</table>
 
-<%= link_to 'Edit', edit_wallet_path(@wallet) %> |
+<script src="sorttable.js"></script>
+<%= link_to 'Edit', edit_wallet_path(@wallet) %>
 <%= link_to 'Back', wallets_path %>
