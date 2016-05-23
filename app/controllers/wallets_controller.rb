@@ -4,6 +4,7 @@ class WalletsController < ApplicationController
 
   def index
     @wallets = Wallet.all.order("created_at DESC")
+    @amount = Wallet.
   end
 
   def show
