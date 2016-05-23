@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :wallets, :categories
-  resources :transactions do
-    resources :wallets, :categories
+  resources  :categories, :transactions
+  resources :wallets do
+    resources :transactions
   end
-  root 'wallets#index'
+  root 'static_pages#home'
 
   devise_scope :user do
     get 'users/sign_out' => "devise/sessions#destroy"

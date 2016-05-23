@@ -1,57 +1,56 @@
 class TransactionsController < ApplicationController
-	before_action :find_transaction, only: [:show, :edit, :update, :destroy]
-	before_action :authenticate_user!
+  before_action :find_transaction, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+  def index
+    @transactions = Transaction.all
+    # @wallets = Wallet.all
+    # @categories = Category.all
+  end
 
-	def index
-		@transactions = Transaction.all
+  def show
+  end
 
-	end
-	def show
-	end
+  def new
+    @transaction = Transaction.new
+  end
 
-	def group_transactions
-		Transaction.group_by_day(:create_at)
-	end
+  def create
+    # @wallet = Wallet.find(params[:wallet_id])
+    # @category = Category.find(params[:category_id])
+    @transaction = Transaction.new(transactions_params)
+    # @transaction.category_id = @category.id
+    # @transaction.wallet_id = @wallet.id
+    if @transaction.save
+      redirect_to transaction_path(@transaction)
+    else
+      render "New"
+    end
+  end
 
-	def new
-		@transaction = Transaction.new
-	end
+  def edit
 
-	def create
-		# @wallet = Wallet.find(params[:wallet_id])
-		# @category = Category.find(params[:category_id])
-		@transaction = Transaction.new(transactions_params)
-		# @transaction.category_id = @category.id
-		# @transaction.wallet_id = @wallet.id
+  end
 
-		if @transaction.save
-			redirect_to transaction_path(@transaction)
-		else
-			render "New"
-		end
-	end
-	def edit
-		
-	end
-	def update
-		if @transaction.update(transactions_params)
-			redirect_to @transaction
-		else
-			render "Edit"
-		end
-	end
+  def update
+    if @transaction.update(transactions_params)
+      redirect_to @transaction
+    else
+      render "Edit"
+    end
+  end
 
-	def destroy
-		@transaction.destroy
-		redirect_to root_path
-	end
+  def destroy
+    @transaction.destroy
+    redirect_to root_path
+  end
 
-	private
+  private
 
-	def transactions_params
-		params.require(:transaction).permit(:day, :money, :note, :wallet_id, :category_id)
-	end
-	def find_transaction
-		@transaction = Transaction.find(params[:id])
-	end
+  def transactions_params
+    params.require(:transaction).permit(:day, :money, :note, :wallet_id, :category_id)
+  end
+
+  def find_transaction
+    @transaction = Transaction.find(params[:id])
+  end
 end

@@ -1,6 +1,5 @@
 -# This is list of transaction
 
-%h1 Listing Transactions
 %table{class: %w(table table-striped sortable)}
   %thead
     %tr
@@ -20,12 +19,11 @@
         %td
         -if transaction.note === ""
           %td
-
         -else
-          %td= link_to transaction.note, transaction
+          %td= transaction.note
         %end
         %td= transaction.wallet.name
-    -#%td= Wallet.find_by_user_id(transaction.wallet_id)
+        %td= link_to '', transaction, class: 'fa fa-eye'
     %end
 
 = link_to 'New Transaction', new_transaction_path
