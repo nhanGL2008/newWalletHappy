@@ -17,7 +17,6 @@ class TransactionsController < ApplicationController
 
 	def create
 		@transaction = Transaction.new(transactions_params)
-
 		if @transaction.save
 			redirect_to @transaction
 		else

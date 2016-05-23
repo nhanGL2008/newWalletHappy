@@ -1,5 +1,5 @@
 
-%h3= image_tag(@category.icon)
+%h3= image_tag @category.image.url(:small)
 %h3= @category.name
 
 - if @category.ctype == true
