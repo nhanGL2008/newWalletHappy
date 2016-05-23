@@ -997,11 +997,14 @@
   .radio-yes-no {
     padding: 8px 32px 8px 32px;
   }
-
+  .main-customize {
+    padding-top: 100px;
+  }
+  .custom {
+    padding: 8px 32px 8px 32px;
+  }
 </style>
 <body>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
 
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
   <div class="container-fluid">
@@ -1028,24 +1031,25 @@
           <a class="hvr-buzz-out" href="/transactions">Transactions</a>
         </li>
         <li>
-          <a class="hvr-buzz-out" href="#">Category</a>
+          <a class="hvr-buzz-out" href="/categories">Category</a>
         </li>
         <li>
-          <a class="hvr-buzz-out" href="#">Logout</a>
+          <a class="hvr-buzz-out" href="destroy_user_session_path">Logout</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="section" id="main" style="padding-top: 200px">
+<div class="section main-customize" id="main">
   <div class="widget Blog" data-version="1" id="Blog1">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           <ul class="pager">
             <li class="next">
-
+              <p class="notice"><%= notice %></p>
+              <p class="alert"><%= alert %></p>
               <%= yield %>
             </li>
 

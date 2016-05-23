@@ -14,11 +14,11 @@ RSpec.describe "categories/edit", type: :view do
 
     assert_select "form[action=?][method=?]", category_path(@category), "post" do
 
-      assert_select "input#category_icon[name=?]", "category[icon]"
+      assert_select "inputs#category_icon[name=?]", "category[icon]"
 
-      assert_select "input#category_name[name=?]", "category[name]"
+      assert_select "inputs#category_name[name=?]", "category[name]"
 
-      assert_select "input#category_ctype[name=?]", "category[ctype]"
+      assert_select "inputs#category_ctype[name=?]", "category[ctype]"
     end
   end
 end

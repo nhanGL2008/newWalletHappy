@@ -1,32 +1,23 @@
 class WalletsController < ApplicationController
   before_action :set_wallet, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:index, show]
+  before_action :authenticate_user!, except: [:index, :show]
 
-  # GET /wallets
-  # GET /wallets.json
   def index
-    @wallets = Wallet.all
+    @wallets = Wallet.all.order("created_at DESC")
   end
 
-  # GET /wallets/1
-  # GET /wallets/1.json
   def show
   end
 
-  # GET /wallets/new
   def new
     @wallet = current_user.wallets.build
   end
 
-  # GET /wallets/1/edit
   def edit
   end
 
-  # POST /wallets
-  # POST /wallets.json
   def create
-    @wallet = Wallet.new(wallet_params)
-
+    @wallet = current_user.wallets.build(wallet_params)
     respond_to do |format|
       if @wallet.save
         format.html { redirect_to @wallet, notice: 'Wallet was successfully created.' }

@@ -1,6 +1,12 @@
-%h3= image_url(@category.icon)
+
+%h3= image_tag @category.image.url(:small)
 %h3= @category.name
-%p= @category.ctype
+
+- if @category.ctype == true
+    %p= 'Income'
+- else
+    %p= 'Outcome'
+%end
 
 = link_to "Back", categories_path
 = link_to "Edit", edit_category_path(@category)

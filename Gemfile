@@ -12,7 +12,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'jquery-turbolinks', '~> 2.1'
 # User
 gem 'devise', '~> 3.5', '>= 3.5.6'
+# Upload File
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
+gem 'bootstrap-datepicker-rails', :require => 'bootstrap-datepicker-rails',
+    :git => 'git://github.com/Nerian/bootstrap-datepicker-rails.git'
 group :development do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'

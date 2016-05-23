@@ -1,15 +1,13 @@
 class TransactionsController < ApplicationController
 	before_action :find_transaction, only: [:show, :edit, :update, :destroy]
-	
+	before_action :authenticate_user!
+
 	def index
 		@transactions = Transaction.all
-		@walletname = Wallet.where(:name => params[:name])
+
 	end
 	def show
-	end
-
-	def self.by_year(year)
-		where('extract(year from day) = ?', year)
+		@categoryname = Category.where(category_id: @category)
 	end
 
 	def group_transactions
@@ -19,11 +17,16 @@ class TransactionsController < ApplicationController
 	def new
 		@transaction = Transaction.new
 	end
-	def create
-		@transaction = Transaction.new(transactions_params)
 
+	def create
+		# @wallet = Wallet.find(params[:wallet_id])
+		# @category = Category.find(params[:category_id])
+		# @transaction = Transaction.create(transactions_params)
+		# @transaction.wallet_id = @wallet.id
+		# @transaction.category_id = @category.id
+		@transaction = Transaction.new(transactions_params)
 		if @transaction.save
-			redirect_to @transaction
+			redirect_to transaction_path(@transaction)
 		else
 			render "New"
 		end
@@ -47,7 +50,7 @@ class TransactionsController < ApplicationController
 	private
 
 	def transactions_params
-		params.require(:transaction).permit(:day, :money, :note, :wallet_id)
+		params.require(:transaction).permit(:day, :money, :note, :wallet_id, :category_id)
 	end
 	def find_transaction
 		@transaction = Transaction.find(params[:id])
