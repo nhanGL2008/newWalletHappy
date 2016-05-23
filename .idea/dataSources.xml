@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1335734433">
+  <component name="DataSourceManagerImpl" format="xml" hash="2734423750">
     <data-source source="LOCAL" name="Rails Wallets-Happy: test" uuid="cd301034-a222-4f47-b002-a2ad21d17f8d">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
