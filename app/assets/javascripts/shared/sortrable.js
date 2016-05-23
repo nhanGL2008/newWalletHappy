@@ -204,7 +204,7 @@ $(document).ready(function(){
                 // strips leading and trailing whitespace.
                 // this is *not* a generic getInnerText function; it's special to sorttable.
                 // for example, you can override the cell text with a customkey attribute.
-                // it also gets .value for <input> fields.
+                // it also gets .value for <inputs> fields.
 
                 if (!node) return "";
 
@@ -372,7 +372,7 @@ $(document).ready(function(){
         window.onload = sorttable.init;
 
 // written by Dean Edwards, 2005
-// with input from Tino Zijdel, Matthias Miller, Diego Perini
+// with inputs from Tino Zijdel, Matthias Miller, Diego Perini
 
 // http://dean.edwards.name/weblog/2005/10/add-event/
 
