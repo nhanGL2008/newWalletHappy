@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails Wallets-Happy: test" uuid="cd301034-a222-4f47-b002-a2ad21d17f8d" />
+    <data-source name="Rails Wallets-Happy: development" uuid="580eb4d6-df95-4dc4-92d5-14bdbcb73353">
+      <auth-required>false</auth-required>
+    </data-source>
+    <data-source name="Rails Wallets-Happy: cucumber" uuid="e808ed53-1646-47f2-83ee-34c07335378d" />
+  </component>
+</project>

@@ -7,7 +7,6 @@ class TransactionsController < ApplicationController
 
 	end
 	def show
-		@categoryname = Category.where(category_id: @category)
 	end
 
 	def group_transactions
@@ -21,10 +20,10 @@ class TransactionsController < ApplicationController
 	def create
 		# @wallet = Wallet.find(params[:wallet_id])
 		# @category = Category.find(params[:category_id])
-		# @transaction = Transaction.create(transactions_params)
-		# @transaction.wallet_id = @wallet.id
-		# @transaction.category_id = @category.id
 		@transaction = Transaction.new(transactions_params)
+		# @transaction.category_id = @category.id
+		# @transaction.wallet_id = @wallet.id
+
 		if @transaction.save
 			redirect_to transaction_path(@transaction)
 		else

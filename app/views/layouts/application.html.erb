@@ -1021,21 +1021,31 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a class="hvr-buzz-out" href="/">Home</a>
-        </li>
-        <li>
-          <a class="hvr-buzz-out" href="/wallets">Wallets</a>
-        </li>
-        <li>
-          <a class="hvr-buzz-out" href="/transactions">Transactions</a>
-        </li>
-        <li>
-          <a class="hvr-buzz-out" href="/categories">Category</a>
-        </li>
-        <li>
-          <a class="hvr-buzz-out" href="destroy_user_session_path">Logout</a>
-        </li>
+        <% if  user_signed_in? %>
+            <li>
+              <a class="hvr-buzz-out" href="/">Home</a>
+            </li>
+            <li>
+              <a class="hvr-buzz-out" href="/wallets">Wallets</a>
+            </li>
+            <li>
+              <a class="hvr-buzz-out" href="/transactions">Transactions</a>
+            </li>
+            <li>
+              <a class="hvr-buzz-out" href="/categories">Category</a>
+            </li>
+            <li>
+              <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'hvr-buzz-out' %>
+            </li>
+        <% else %>
+            <li>
+              <%= link_to 'Sign In', new_user_session_path, class: 'hvr-buzz-out' %>
+            </li>
+            <li>
+              <%= link_to 'Sign Up', new_user_registration_path , class: 'hvr-buzz-out' %>
+            </li>
+
+        <% end%>
       </ul>
     </div>
   </div>
@@ -1048,9 +1058,12 @@
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           <ul class="pager">
             <li class="next">
+
               <p class="notice"><%= notice %></p>
               <p class="alert"><%= alert %></p>
+
               <%= yield %>
+
             </li>
 
           </ul>
