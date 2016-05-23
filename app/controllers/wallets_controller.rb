@@ -1,5 +1,5 @@
 class WalletsController < ApplicationController
-  before_action :set_wallet, :calculate_balance, only: [:show, :edit, :update, :destroy]
+  before_action :set_wallet, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
@@ -14,27 +14,6 @@ class WalletsController < ApplicationController
   end
 
   def edit
-  end
-
-  def calculate_balance
-    Wallet.all.each do |wallet|
-      Transaction.all.each do |transac|
-        if wallet.id === transac.wallet_id
-          Category.all.each do |cate|
-            if cate.id === transac.category_id
-              if cate.ctype ===true
-                wallet.balance += transac.money
-              else
-                wallet.balance -= transac.money
-              end
-              if wallet.balance <= 0
-                wallet.balance = 0
-              end
-            end
-          end
-        end
-      end
-    end
   end
 
   def create
