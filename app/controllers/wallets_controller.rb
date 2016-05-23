@@ -4,6 +4,8 @@ class WalletsController < ApplicationController
 
   def index
     @wallets = Wallet.all.order("created_at DESC")
+    @transactions = Transaction.all
+    @category = Category.all
   end
 
   def show

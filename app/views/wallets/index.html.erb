@@ -12,6 +12,22 @@
 
   <tbody>
     <% @wallets.each do |wallet| %>
+      <% @transactions.each do |transac| %>
+          <% if wallet.id === transac.wallet_id %>
+              <% @category.each do |cate| %>
+                  <% if cate.id === transac.category_id %>
+                      <% if cate.ctype ===true %>
+                          <% wallet.balance += transac.money %>
+                      <% else %>
+                          <% wallet.balance -= transac.money %>
+                      <% end %>
+                      <% if wallet.balance <= 0 %>
+                          <% wallet.balance = 0 %>
+                      <% end %>
+                  <% end %>
+              <% end %>
+          <% end %>
+      <% end %>
       <tr>
         <td><%= link_to(wallet.name ) %></td>
         <td><%= wallet.balance %></td>

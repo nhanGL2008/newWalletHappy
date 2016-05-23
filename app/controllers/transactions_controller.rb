@@ -1,5 +1,5 @@
 class TransactionsController < ApplicationController
-  before_action :find_transaction, :calculate_balance, only: [:show, :edit, :update, :destroy]
+  before_action :find_transaction, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
   def index
     @transactions = Transaction.all
@@ -47,26 +47,26 @@ class TransactionsController < ApplicationController
 
   private
 
-  def calculate_balance
-    Wallet.all.each do |wallet|
-      Transaction.all.each do |transac|
-        if wallet.id === transac.wallet_id
-          Category.all.each do |cate|
-            if cate.id === transac.category_id
-              if cate.ctype ===true
-                wallet.balance += transac.money
-              else
-                wallet.balance -= transac.money
-              end
-              if wallet.balance <= 0
-                wallet.balance = 0
-              end
-            end
-          end
-        end
-      end
-    end
-  end
+  # def calculate_balance
+  #   Wallet.all.each do |wallet|
+  #     Transaction.all.each do |transac|
+  #       if wallet.id === transac.wallet_id
+  #         Category.all.each do |cate|
+  #           if cate.id === transac.category_id
+  #             if cate.ctype ===true
+  #               wallet.balance += transac.money
+  #             else
+  #               wallet.balance -= transac.money
+  #             end
+  #             if wallet.balance <= 0
+  #               wallet.balance = 0
+  #             end
+  #           end
+  #         end
+  #       end
+  #     end
+  #   end
+  # end
 
   def transactions_params
     params.require(:transaction).permit(:day, :money, :note, :wallet_id, :category_id)
