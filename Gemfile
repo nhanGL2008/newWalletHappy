@@ -13,6 +13,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'jquery-turbolinks', '~> 2.1'
 gem 'rspec', '~> 3.4'
 gem 'simplecov', '~> 0.11.2'
+
 # User
 gem 'devise', '~> 3.5', '>= 3.5.6'
 # Upload File
@@ -36,6 +37,11 @@ group :test, :development do
   gem 'cucumber-rails', :require => false
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
+  gem 'byebug'
+end
+
+group :development do
+  gem 'spring'
 end
 
 group :production do
