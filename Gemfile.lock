@@ -294,7 +294,7 @@ DEPENDENCIES
   minitest (~> 5.9)
   paperclip (~> 4.3, >= 4.3.6)
   pg
-  rails (~> 4.2, >= 4.2.6)
+  rails
   rails_12factor
   rspec (~> 3.4)
   rspec-rails
@@ -310,7 +310,7 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 RUBY VERSION
-   ruby 2.2.5p319
+   ruby 2.3.1p112
 
 BUNDLED WITH
    1.12.4
