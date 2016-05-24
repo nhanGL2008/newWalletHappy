@@ -1,7 +1,7 @@
 # Plannning Wallet Happy application
 
 1. Anser Questions
-    - What are ew building ?
+    - What are we building ?
     - Who are we building it for ?
     - What features do we need to have?
 2. User Stories
@@ -49,12 +49,12 @@
     - day:datetime
     - money:float
     - note:text
-    - belongs_to :wallets
+    - belongs_to :wallets, category
 - **Category**:
     - name:string
     - icon:string (link icon)
     - ctype:boolean
-    - has_many :ctypes
+    - has_many :transactions
 
 ## Think through the pages we need in our app
 
@@ -62,11 +62,12 @@
  - Home#login
  - Home#register
  - Wallet#index
- - Wallet#_form
+ - Wallet#edit
  - Wallet#show
  - Transaction#index
- - Transaction#_form
+ - Transaction#edit
  - Transaction#show
  - Category#index
- - Category#_form
- - About
+ - Category#edit
+ - Category#show
+
