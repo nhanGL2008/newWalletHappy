@@ -32,12 +32,11 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'rspec-rails'
   gem 'guard-rspec'
-  gem 'sqlite3'
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
-
+gem 'pg'
 group :production do
-  gem 'pg' # for Heroku deployment
+# for Heroku deployment
   gem 'rails_12factor'
 end

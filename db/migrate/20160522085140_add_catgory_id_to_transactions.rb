@@ -1,5 +1,5 @@
 class AddCatgoryIdToTransactions < ActiveRecord::Migration
   def change
-    add_column :transactions, :category_id, :interger
+    add_column :transactions, :category_id, :integer
   end
 end

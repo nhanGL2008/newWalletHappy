@@ -7,15 +7,7 @@
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/config/database.yml</remarks>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite3</jdbc-url>
-      <libraries>
-        <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/xerial-sqlite-license.txt</url>
-        </library>
-        <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/sqlite-jdbc-3.8.11.2.jar</url>
-        </library>
-      </libraries>
+      <jdbc-url>jdbc:postgresql:my_database_test</jdbc-url>
     </data-source>
     <data-source source="LOCAL" name="Rails Wallets-Happy: development" uuid="580eb4d6-df95-4dc4-92d5-14bdbcb73353">
       <driver-ref>sqlite.xerial</driver-ref>
@@ -23,18 +15,10 @@
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/config/database.yml</remarks>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:postgresql:my_database_development</jdbc-url>
       <explain-plan-config>
         <provider>com.intellij.database.plan.ExplainPlanProvider.NullExplainPlanProvider</provider>
       </explain-plan-config>
-      <libraries>
-        <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/xerial-sqlite-license.txt</url>
-        </library>
-        <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/sqlite-jdbc-3.8.11.2.jar</url>
-        </library>
-      </libraries>
     </data-source>
     <data-source source="LOCAL" name="Rails Wallets-Happy: cucumber" uuid="e808ed53-1646-47f2-83ee-34c07335378d">
       <driver-ref>sqlite.xerial</driver-ref>
