@@ -31,6 +31,7 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'sqlite3'
 end
 
 group :production do
