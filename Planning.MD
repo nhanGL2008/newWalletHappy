@@ -1,7 +1,7 @@
 # Plannning Wallet Happy application
 
 1. Anser Questions
-    - What are ew building ?
+    - What are we building ?
     - Who are we building it for ?
     - What features do we need to have?
 2. User Stories
@@ -26,14 +26,6 @@
         - Create / Edit / Destroy.
 
 
-
-
-## User stories
-
-- To save my balance in my wallet
-- As a user, I want to add new transaction, to save my transaction.
-### more ###
-
 ## Modeling our Data
 
 - Ví tiền có 2 loại **ví tiền mặt** và ví **tài khoản ngân hàng**. (nên chỉ để tên cho dễ). Quản lý bằng tên.
@@ -57,15 +49,12 @@
     - day:datetime
     - money:float
     - note:text
-    - belongs_to :wallets
+    - belongs_to :wallets, category
 - **Category**:
     - name:string
     - icon:string (link icon)
-    - has_many :ctypes
-- **CType**:
-    - category_id:integer
-    - name:string   (Expense- Income)
-    - belongs_to :category
+    - ctype:boolean
+    - has_many :transactions
 
 ## Think through the pages we need in our app
 
@@ -73,10 +62,12 @@
  - Home#login
  - Home#register
  - Wallet#index
- - Wallet#_form
+ - Wallet#edit
+ - Wallet#show
  - Transaction#index
- - Transaction#_form
+ - Transaction#edit
  - Transaction#show
  - Category#index
- - Category#_form
- - Contact
+ - Category#edit
+ - Category#show
+
