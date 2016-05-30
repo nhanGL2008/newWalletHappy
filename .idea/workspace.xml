@@ -2,20 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aebddd7b-64db-40f0-b4b4-216ac17f658f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-b1d15e944f9489ef42cee2346f552008f438da27cc4e38ccd3e0ec4b866c94bf.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-b1d15e944f9489ef42cee2346f552008f438da27cc4e38ccd3e0ec4b866c94bf.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/user_controller.rb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/categories.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/categories.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/transactions.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/transactions.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/user.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/user.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/wallets.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/wallets.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/transactions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/transactions_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/transaction.rb" afterPath="$PROJECT_DIR$/app/models/transaction.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/transactions/index.html.haml" afterPath="$PROJECT_DIR$/app/views/transactions/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/assets.rb" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/.sprockets-manifest-9835a674073dcb0dc53fc17badd0b8aa.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-57884e07ac1122a216f75d084ad62050e4e70961896b96225c416624dc079391.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-57884e07ac1122a216f75d084ad62050e4e70961896b96225c416624dc079391.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-b1d15e944f9489ef42cee2346f552008f438da27cc4e38ccd3e0ec4b866c94bf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-b1d15e944f9489ef42cee2346f552008f438da27cc4e38ccd3e0ec4b866c94bf.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-a26394f7ede100ca118eff2eda08596275a9839b959c226e15439557a5a80742.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/001/medium/ferrari.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/001/medium/martini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/001/medium/shopping_basket_yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/001/medium/travel_bus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/001/original/ferrari.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/001/original/martini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/001/original/shopping_basket_yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/001/original/travel_bus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/001/small/ferrari.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/001/small/martini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/001/small/shopping_basket_yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/001/small/travel_bus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/002/medium/cash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/002/medium/coins1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/002/medium/shopping_basket_yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/002/original/cash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/002/original/coins1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/002/original/shopping_basket_yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/002/small/cash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/002/small/coins1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/002/small/shopping_basket_yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/003/medium/ferrari.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/003/original/ferrari.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/003/small/ferrari.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/004/medium/wallet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/004/original/wallet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/004/small/wallet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/005/medium/credit_card.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/005/original/credit_card.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/005/small/credit_card.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/006/medium/heart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/006/original/heart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/006/small/heart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/007/medium/cash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/007/original/cash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/007/small/cash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/008/medium/coins1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/008/original/coins1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/categories/images/000/000/008/small/coins1.png" afterPath="" />
     </list>
     <ignored path="Wallets-Happy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -122,18 +160,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wallets.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wallets.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/wallets.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application-57884e07ac1122a216f75d084ad62050e4e70961896b96225c416624dc079391.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/assets/application-57884e07ac1122a216f75d084ad62050e4e70961896b96225c416624dc079391.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -339,24 +367,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Wallets-Happy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Wallets-Happy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -603,12 +613,12 @@
       <workItem from="1464030169986" duration="824000" />
       <workItem from="1464055545907" duration="1915000" />
       <workItem from="1464350398158" duration="591000" />
-      <workItem from="1464570638021" duration="3202000" />
+      <workItem from="1464570638021" duration="3287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81937000" />
+    <option name="totallyTimeSpent" value="82022000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="699" extended-state="0" />
