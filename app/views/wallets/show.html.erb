@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<table class="table table-striped sortable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Balance</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><%= @wallet.name	  %></td>
+      <td><%= @wallet.balance %></td>
+    </tr>
+  </tbody>
+</table>
+
+<script src="sorttable.js"></script>
+<%= link_to 'Edit', edit_wallet_path(@wallet) %>
+<%= link_to 'Back', wallets_path %>

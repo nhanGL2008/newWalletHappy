@@ -1,0 +1,13 @@
+
+%h3= image_tag @category.image.url(:small)
+%h3= @category.name
+
+- if @category.ctype == true
+    %p= 'Income'
+- else
+    %p= 'Outcome'
+%end
+
+= link_to " Back", categories_path #fa fa-home home icon
+= link_to " Edit", edit_category_path(@category)
+= link_to " Delete", category_path, method: :delete, data: { confirm: "Are you sure?" }, class: 'btn btn-default'

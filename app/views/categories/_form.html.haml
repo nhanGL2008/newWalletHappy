@@ -1,0 +1,10 @@
+= simple_form_for(@category, html: { class: 'form-horizontal' }) do |f|
+  = f.input :image
+  = f.input :icon , label: 'Icon :', :placeholder => "http://abc.xyz/img.png"
+  = f.input :name , label: 'Name :', :placeholder => "Shopping"
+
+
+  -#radio button in simple_form  mutually exclusive
+  = f.collection_radio_buttons :ctype, [[true, 'Income'] ,[false, 'Outcome']], :first, :last , :class => 'radio-yes-no', label: 'Type :'
+  %br/
+  = f.button :submit, :class => 'btn'

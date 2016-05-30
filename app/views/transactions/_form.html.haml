@@ -1,0 +1,12 @@
+= simple_form_for(@transaction, html: {class: 'form=horizontal'}) do |f|
+  = f.input :money, label: "Money: ", placeholder: "100 000"
+  = f.date_select :day, { start_year: 100.years.ago.year, end_year: Date.today.year, default: Date.today}
+  -#= f.text_field :day, hide_label: true, class: 'datepicker'
+  -#= f.collection_select :category_id, Category.all, :id, :ctype, {promt: 'Category'}, class: 'btn btn-lg'
+  -#= f.collection_select :wallet_id, Wallet.all, :id, :name, {promt: 'Wallet'}, class: 'btn btn-lg'
+  = f.association :category, collection: Category.all.order(:name), prompt: "Choose a Category"
+  = f.association :wallet, prompt: "Choose a Wallet"
+  = f.input :note, label: "Note: "
+
+  %br
+  = f.button :submit, class: 'btn'

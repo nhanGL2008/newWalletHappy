@@ -1,0 +1,32 @@
+%h1 Listing Categories
+
+%table.table.table-striped.sortable
+  %thead
+    %tr
+      %td{:style => "text-align: center;"} Icon
+      %td{:style => "text-align: center;", :conspan => "2"} Name
+      %td{:style => "text-align: center;"} Income
+      %td{:style => "text-align: center;"} OutCome
+      %td
+      %td
+
+    %tbody
+      - @categories.each do |category|
+        %tr
+          %td= link_to (image_tag category.image.url(:small))
+          %td= link_to category.name, category
+          - if category.ctype == true
+            %td.fa.fa-check
+            %td
+          - else
+            %td
+            %td.fa.fa-check
+          %end
+          %td= link_to "", edit_category_path(category), class: 'fa fa-pencil'
+          %td= link_to "",  category, method: :delete, data: { confirm: 'Are you sure?' } , class: 'fa fa-trash-o'
+      %end
+
+%br
+
+
+= link_to 'New Category', new_category_path
