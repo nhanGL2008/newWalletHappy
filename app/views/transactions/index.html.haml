@@ -25,5 +25,5 @@
         %td= transaction.wallet.name
         %td= link_to '', transaction, class: 'fa fa-eye'
     %end
-
+  %script{:src => "sorttable.js"}
 = link_to 'New Transaction', new_transaction_path

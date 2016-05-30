@@ -18,7 +18,9 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'rspec', '~> 3.4'
 gem 'simplecov', '~> 0.11.2'
 gem 'webrat', '~> 0.7.3'
-gem 'sqlite3'
+
+gem 'pg', group:	:production
+gem 'sqlite3', group:	:development
 
 # User
 gem 'devise', '~> 3.5', '>= 3.5.6'
@@ -44,7 +46,6 @@ group :test do
 end
 
 group :production do
-# for Heroku deployment
-  gem 'pg'
+
   gem 'rails_12factor'
 end
