@@ -11,10 +11,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'jquery-turbolinks', '~> 2.1'
-gem 'mime-types', '~> 3.1'
-gem 'minitest', '~> 5.9'
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
@@ -35,8 +32,9 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
-gem 'pg'
+
 group :production do
 # for Heroku deployment
+  gem 'pg'
   gem 'rails_12factor'
 end

@@ -997,9 +997,11 @@
   .radio-yes-no {
     padding: 8px 32px 8px 32px;
   }
+
   .main-customize {
     padding-top: 100px;
   }
+
   .custom {
     padding: 8px 32px 8px 32px;
   }
@@ -1021,7 +1023,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <% if  user_signed_in? %>
+        <% if user_signed_in? %>
             <li>
               <a class="hvr-buzz-out" href="/">Home</a>
             </li>
@@ -1042,10 +1044,10 @@
               <%= link_to 'Sign In', new_user_session_path, class: 'hvr-buzz-out' %>
             </li>
             <li>
-              <%= link_to 'Sign Up', new_user_registration_path , class: 'hvr-buzz-out' %>
+              <%= link_to 'Sign Up', new_user_registration_path, class: 'hvr-buzz-out' %>
             </li>
 
-        <% end%>
+        <% end %>
       </ul>
     </div>
   </div>
@@ -1102,7 +1104,7 @@
           </li>
         </ul>
         <p class="copyright text-muted">Copyright © <span id="copyright-year">2016</span>
-          <a href="#" title="Happy-Wallets">Happy Wallets</a>
+          <a href="/" title="Happy-Wallets">Happy Wallets</a>
       </div>
     </div>
   </div>
