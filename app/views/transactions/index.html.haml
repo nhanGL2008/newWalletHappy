@@ -1,23 +1,29 @@
 -# This is list of transaction
 
-%h1 Listing Transactions
 %table{class: %w(table table-striped sortable)}
   %thead
     %tr
       %td{:style => "text-align: center;"} Day
       %td{:style => "text-align: center;"} Balance
-      %td{:style => "text-align: center;", :conspan => "2"} Category
-      %td{:style => "text-align: center;"} Note
-
+      %td{:style => "text-align: center;"} Category
+      %td{:style => "text-align: center;", colspan: "3"} Note
+      %td{:style => "text-align: center;"} Wallet
   %tbody
     -@transactions.each do |transaction|
       %tr
         %td= transaction.day
         %td= transaction.money
         -#%td= transaction.
-        %td= link_to transaction.note, transaction
-
-        -#%td= Wallet.find_by_user_id(transaction.wallet_id)
+        %td= transaction.category.name
+        %td
+        %td
+        -if transaction.note === ""
+          %td
+        -else
+          %td= transaction.note
+        %end
+        %td= transaction.wallet.name
+        %td= link_to '', transaction, class: 'fa fa-eye'
     %end
-
+  %script{:src => "sorttable.js"}
 = link_to 'New Transaction', new_transaction_path

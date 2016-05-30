@@ -1,0 +1,9 @@
+Feature:    Wallet
+    As a user
+    I want to add a Wallet
+    So that I can mange my wallet balance
+
+    Scenario: User creates a wallet
+    Given User was logged in
+    When User clicks 'New Wallet' button
+    Then User should see a page with title 'Title', content 'Content', button 'Create Wallet'

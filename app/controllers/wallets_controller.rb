@@ -4,6 +4,8 @@ class WalletsController < ApplicationController
 
   def index
     @wallets = Wallet.all.order("created_at DESC")
+    @transactions = Transaction.all
+    @category = Category.all
   end
 
   def show
@@ -18,6 +20,7 @@ class WalletsController < ApplicationController
 
   def create
     @wallet = current_user.wallets.build(wallet_params)
+
     respond_to do |format|
       if @wallet.save
         format.html { redirect_to @wallet, notice: 'Wallet was successfully created.' }
@@ -54,13 +57,13 @@ class WalletsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_wallet
-      @wallet = Wallet.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_wallet
+    @wallet = Wallet.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def wallet_params
-      params.require(:wallet).permit(:name, :balance)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def wallet_params
+    params.require(:wallet).permit(:name, :balance)
+  end
 end
