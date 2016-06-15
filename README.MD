@@ -4,8 +4,8 @@
 - Developed by: HTTN Team (Khắc Thành, Thu Trang, Nguyễn Thành Nhân).
 
 - Web services quản lý tài chính cá nhân.
-- Mẫu: https://moneylover.me/vi/
-- Link: https://happywallets.herokuapp.com/ 
+- Sản phẩm được làm dựa trên phần mềm mẫu sau: https://moneylover.me/vi/
+- Link sản phẩm: https://happywallets.herokuapp.com/ 
 
 # Brief information
 
