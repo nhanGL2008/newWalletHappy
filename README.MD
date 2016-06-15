@@ -1,6 +1,5 @@
 ## Wallet Happy
 
-Bài tập môn Chuyên đề Công nghệ - Nguyễn Thành Nhân - MSSV: 13020634
 
 - Web services quản lý tài chính cá nhân.
 - Xây dựng dựa trên Ứng dụng [**Money Lover**](https://moneylover.me/vi/ "Money Lover's Homepage").
