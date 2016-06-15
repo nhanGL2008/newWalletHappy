@@ -8,16 +8,6 @@
 - Link: https://happywallets.herokuapp.com/ 
 
 # Brief information
-    - Users
-        - Create account
-        - Login
-    - Wallets
-        - Create / Edit / Destroy.
-    - Transactions
-        - Create / Edit / Destroy.
-    - Categorys
-        - Create / Edit / Destroy.
-
 
 - **User**:
     - name:string
