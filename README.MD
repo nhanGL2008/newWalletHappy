@@ -7,29 +7,6 @@
 - Sản phẩm được làm dựa trên phần mềm mẫu sau: https://moneylover.me/vi/
 - Link sản phẩm: https://happywallets.herokuapp.com/ 
 
-# Brief information
-
-- **User**:
-    - name:string
-    - password:string
-    - has_many :wallets
-
-- **Wallet**:
-    - name:string
-    - balance:float
-    - has_many :transactions
-    - belongs_to :user
-
-- **Transaction**:
-    - day:datetime
-    - money:float
-    - note:text
-    - belongs_to :wallets, category
-- **Category**:
-    - name:string
-    - icon:string (link icon)
-    - ctype:boolean
-    - has_many :transactions
 
 
 
